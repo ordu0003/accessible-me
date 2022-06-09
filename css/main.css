@@ -3,7 +3,7 @@ body {
   background-color: #999999;
   margin: 0;
   padding: 0;
-  color:#EBECF0;
+  color:#ffffff;
 }
 
 h1,
@@ -13,7 +13,6 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
-  color: white;
 }
 
 header {
