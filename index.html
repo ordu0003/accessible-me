@@ -58,11 +58,15 @@
         <h1>Contact Us</h1>
         <form action="thanks.html">
           <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
+          <label for="full-name">Name</label>
+            <input type="text" placeholder="Full Name" id="full-name" name="full-name">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" id="email" name="email">
+          <label for="subject">Subject</label>
+          <input type="text" placeholder="Subject" id="subject" name="subject">
           <b>Your Message</b>
-          <textarea></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write here"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
