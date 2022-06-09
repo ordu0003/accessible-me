@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: #999999;
+  background-color: #ffffff;;
   margin: 0;
   padding: 0;
   color:#252525;
@@ -13,7 +13,7 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
-  color: white;
+
 }
 
 header {
@@ -42,8 +42,7 @@ header ul li {
 .skip-links a {
   position: absolute;
   top: -3em;
-  background-color: black;
-  color:white;
+  background-color: rgb(255, 255, 255);
   padding: .5em 1em;
   font-weight: bold;
 }
@@ -55,7 +54,7 @@ header ul li {
 a:link,
 a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .main-nav ul{
