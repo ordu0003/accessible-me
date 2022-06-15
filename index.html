@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header role="banner">
     <ul class="skip-links">
       <li><a href="#nav">Skip to main nav 🡣</a></li>
       <li><a href="#content">Skip to main content 🡣</a></li>
@@ -22,62 +22,67 @@
 </header>
 
   <div class="container">
-    <div class="site-header">
+    <header class="site-header">
       <h1>Jam Box Studios</h1>
-      <div id="nav" class="main-nav" aria-label="main-nav" role="navigation">
+      <nav id="nav" class="main-nav" aria-label="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
+      </nav>
       <img src="https://placekitten.com/1200/900" class="banner" alt="kitten Banner">
-    </div>
-    <div id="content" class="main-content" role="main">
+    </header>
+    <main id="content" class="main-content" role="main">
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner" role="complementary">
-        <h2>Meet the owner</h2>
-        <ul itemscope itemtype="https://schema.org/Person">
-          <li itemprop="name">Name: John Doe</li>
-          <li itemprop="jobTitle">Title: CEO</li>
-          <li itemprop="email">Email: johnjoe@jambox.ca</li>
-          <li itemprop="telephone">Phone: 613-000-0000</li>
-        </ul>
-        <h2>Address</h2>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
-      </div>
-      <div id="contact" class="contact-section" role="form">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
+      <section class="owner" role="complementary">
+        <h3>Meet the owner</h3>
+        <dl itemscope itemtype="https://schema.org/Person">
+          <dt itemprop="name">Name: John Doe</dt>
+          <dt itemprop="jobTitle">Title: CEO</dt>
+          <dt itemprop="email">Email: johnjoe@jambox.ca</dt>
+          <dt itemprop="telephone">Phone: 613-000-0000</dt>
+        </dl>
+        <h4>Address</h4>
+        <address itemscope itemtype="https://schema.org/address" itemprop="address">
+          <span itemprop="name"> Studios</span>
+          <span itemprop="address">123 Guitar Road,</span>
+          <span itemprop="addresscity">Musicville,</span>
+            <span itemprop="addresscountry"> Danceistan</span>
+          <span itemprop="postalcode"> B3T 0L0</span>
+        </address>
+      </section>
+      <section id="contact" class="contact-section" role="form">
+        <h3>Contact Us</h3>
+        <form action="thanks.html" method="post">
           <label for="full-name">Name</label>
           <input type="text" placeholder="Full Name" id="full-name" name="full-name">
+
           <label for="email">Email</label>
-          <input type="text" placeholder="Email" id="email" name="email">
+          <input type="email" placeholder="Email" id="email" name="email">
+
           <label for="subject">Subject</label>
           <input type="text" placeholder="Subject" id="subject" name="subject">
+
           <label for="message"><b>Your Message</b></label>
-          <textarea id="message" name="message" placeholder="Write here"></textarea>
+          <textarea id="message" placeholder="Write here" name="message"></textarea>
+
           <button type="submit">Send</button>
         </form>
-      </div>
-    </div>
+      </section>
+    </main>
     <div class="top-arrow">
         <ul class="skip-links2">
           <li><a href="#nav">Back to top 🡡</a></li>
         </ul>
 
     </div>
-    <div class="site-footer" aria-label="site-footer" role="contentinfo">
-      &copy; 2021 Jam Box Studios
-    </div>
+    <footer class="site-footer" aria-label="site-footer" role="contentinfo">
+      <p> &copy; 2021 Jam Box Studios</p>
+    </footer>
   </div>
 </body>
 
